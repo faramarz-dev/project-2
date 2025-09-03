@@ -134,7 +134,7 @@ export default function HeaderNavbar() {
               </span>
               <input
                 type="text"
-                placeholder="Search food"
+                placeholder="Search"
                 className="w-full pl-10 border px-3 py-2 rounded-2xl border-gray-500 outline-none focus:border-pink-600 focus:border-2"
               />
             </div>
