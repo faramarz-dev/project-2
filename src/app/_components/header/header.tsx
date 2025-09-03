@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
               <h2 className="text-2xl xl:text-3xl font-stagera">
                 Welcome to The
               </h2>
-              <h1 className="text-5xl xl:text-9xl font-santa mt-10 leading-14 xl:leading-40">
+              <h1 className="xs:text-5xl lg:text-7xl 2xl:text-9xl font-santa mt-10 xs:leading-14 md:leading-22 2xl:leading-40">
                 Discover <span className="text-pink-600">Sweet</span> Delights
               </h1>
               <p className=" mt-8 text-justify text-gray-600 mb-10 xl:w-1/2">
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
               alt=""
               width={500}
               height={100}
-              className="w-52 xl:w-[450px] absolute -bottom-60 right-0 xl:-bottom-20 xl:right-70"
+              className="w-52 lg:w-80 2xl:w-[450px] absolute -bottom-60 right-0 md:-bottom-80 2xl:-bottom-20 2xl:right-70"
             />
           </div>
         </div>

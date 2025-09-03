@@ -20,24 +20,27 @@ function Favorites() {
         </p>
       </div>
       {/* slider */}
-      <div className="mt-24 mx-auto w-[60%]">
+      <div className="mt-24 mx-auto w-full max-w-[90%] sm:max-w-[70%]">
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true }}
           spaceBetween={0}
-          slidesPerView={4}
-          slidesPerGroup={2}
+          slidesPerView={1}
+          slidesPerGroup={1}
           loop={true}
           breakpoints={{
             320: { slidesPerView: 1, slidesPerGroup: 1 },
             640: { slidesPerView: 2, slidesPerGroup: 2 },
-            1024: { slidesPerView: 4, slidesPerGroup: 4 },
+            1024: { slidesPerView: 3, slidesPerGroup: 3 },
+            1440: { slidesPerView: 4, slidesPerGroup: 4 },
           }}
-          className="h-[500px]"
+          className="h-[500px] "
         >
           {FavoritesData.map((item) => (
             <SwiperSlide key={item.id}>
-              <FavoriteCard {...item} />
+              <div className="flex justify-center items-center">
+                <FavoriteCard {...item} />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
